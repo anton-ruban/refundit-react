@@ -11,12 +11,14 @@ import PlaneIcon from '../../assets/images/paper_plane.png';
 const classes = utils.createStyles('AboutUs', {
     container: {
       position: 'relative',
-      padding: '20px 0 110px',
+      padding: '36px 0 110px',
     },
     flexRow: {
       display: 'flex',
       alignItems: 'center',
-      marginTop: 15,
+      maxWidth: 1920,
+      margin: 'auto',
+      marginTop: 15
     },
     dotLine: {
       flex: 1,
@@ -25,21 +27,22 @@ const classes = utils.createStyles('AboutUs', {
     text: {
       position: 'absolute',
       color: '#00ad96',
-      right: 360,
-      fontSize: 29,
-      top: 20,
+      right: 'calc(50% - 594px)',
+      fontSize: 28,
+      top: 40,
     },
     centerRow: {
       display: 'flex',
       alignItems: 'center',
       justifyContent: 'center',
+      marginTop: -13,
     },
     GridItemClassName: {
-      width: 350,
+      width: 346,
       display: 'flex',
       alignItems: 'center',
-      marginLeft: 50,
-      marginRight: 50,
+      marginLeft: 64,
+      marginRight: 105,
       flexDirection: 'column',
     },
     GridItemIconClass: {
@@ -49,6 +52,9 @@ const classes = utils.createStyles('AboutUs', {
     },
     GridItemTextClass: {
       fontSize: 23,
+    },
+    planeIcon: {
+      marginLeft: 8,
     }
 });
 
@@ -67,7 +73,7 @@ class AboutUs extends Component {
       <div className={classes.container}>
         <span className={classes.text}>:כתבו עלינו</span>
         <div className={classes.flexRow}>
-          <img src={PlaneIcon}/>
+          <img src={PlaneIcon} className={classes.planeIcon}/>
           <div className={classes.dotLine}></div>
         </div>
         <div className={classes.centerRow}>

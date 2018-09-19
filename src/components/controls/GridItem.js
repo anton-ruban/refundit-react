@@ -7,12 +7,13 @@ const classes = utils.createStyles('GridItem', {
       flexDirection: 'column',
       alignItems: 'center',
       width: 250,
-      marginLeft: 70,
-      marginRight: 70,
+      marginLeft: 97,
+      marginRight: 71,
     },
     text: {
       fontSize: 29,
       color: '#00ad96',
+      marginTop: 15,
     },
     clickable: {
       cursor: 'pointer'

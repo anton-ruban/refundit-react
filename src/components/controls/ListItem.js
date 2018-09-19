@@ -3,7 +3,7 @@ import * as utils from '../../common/utils';
 
 const classes = utils.createStyles('ListItem', {
     container: {
-      marginBottom: 30,
+      marginBottom: 33,
       display: 'flex',
       alignItems: 'center',
       justifyContent: 'space-between',

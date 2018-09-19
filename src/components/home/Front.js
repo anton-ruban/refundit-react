@@ -11,20 +11,22 @@ const classes = utils.createStyles('Front', {
       background: `url(${FrontBackground}) no-repeat`,
       backgroundPosition: 'center',
       position: 'relative',
+      margin: '0 auto',
+      maxWidth: 1920,
       height: 1240,
     },
     center: {
       position: 'absolute',
-      left: '50%',
-      top: '50%',
-      transform: 'translate(-50%, -50%)',
+      top: 540,
+      left: 'calc(50% - 653px)',
       display: 'flex',
       flexDirection: 'column',
       alignItems: 'center',
     },
     title: {
       color: 'white',
-      fontSize: 63,
+      width: 1257,
+      fontSize: '65px',
       fontFamily: 'Rubik Regular'
     },
     downloadBtn: {
@@ -33,14 +35,14 @@ const classes = utils.createStyles('Front', {
       height: 70,
       lineHeight: '70px',
       color: 'white',
-      marginTop: 50,
+      marginTop: 55,
       fontSize: 31,
       cursor: 'pointer',
       position: 'relative',
     },
     downloadBtnIcon: {
-      top: -30,
-      left: -20,
+      top: -37,
+      left: -25,
       position: 'absolute',
       color: 'white'
     },
@@ -54,16 +56,17 @@ const classes = utils.createStyles('Front', {
       fontSize: 20,
     },
     strongText: {
-      fontSize: 30,
+      fontFamily: 'Rubik Bold',
+      fontSize: 31,
     },
     rightTopIcon: {
-      top: 0,
-      right: 0,
+      top: 15,
+      right: 34,
       position: 'absolute',
     },
     logoIcon: {
-      top: 70,
-      left: 80,
+      top: 62,
+      left: 77,
       position: 'absolute',
     },
 });
@@ -94,11 +97,11 @@ class Front extends Component {
       <div className={classes.container}>
         <div className={classes.center}>
           <span className={classes.title}>קחו את הזמן לשופינג בבלגיה! וקבלו החזר מע״מ באפליקציה בקלות ומכ</span>
-          <div className={classes.downloadBtn} onClick={this.handleDownloadClick}>להורדת האפליקציה
+          <div className={classes.downloadBtn} onClick={this.handleDownloadClick}>&lt;&lt; להורדת האפליקציה
             <img className={classes.downloadBtnIcon} src={DownloadMark}/>
           </div>
           <span className={classes.firstText}>בקשו החזר מע״מ באפליקציה </span>
-          <span className={classes.text}> וקבלו <strong className={classes.strongText}>50 יורו מתנה</strong> לביזבוזים</span>
+          <span className={classes.text}> וקבלו <span className={classes.strongText}>50 יורו מתנה</span> לביזבוזים</span>
         </div>
         <img src={RightTopIcon} className={classes.rightTopIcon}/>
         <img src={Logo} className={classes.logoIcon}/>

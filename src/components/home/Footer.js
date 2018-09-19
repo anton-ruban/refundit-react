@@ -6,6 +6,8 @@ import LinkedinIcon from '../../assets/images/linkedin_icon.png';
 
 const classes = utils.createStyles('Footer', {
     container: {
+      maxWidth: 1920,
+      margin: '0 auto',
     },
     greenSection: {
       background: '#00ad96',
@@ -14,7 +16,7 @@ const classes = utils.createStyles('Footer', {
       display: 'flex',
       alignItems: 'center',
       justifyContent: 'space-between',
-      padding: '0 50px',
+      padding: '0 50px 0 119px',
       color: 'white',
       minWidth: 1100,
     },
@@ -36,7 +38,7 @@ const classes = utils.createStyles('Footer', {
     },
     info: {
       fontSize: 27,
-      marginRight: 40,
+      marginRight: 51,
     },
     contactIcon: {
       cursor: 'pointer',
@@ -61,7 +63,7 @@ class Footer extends Component {
             <span className={classes.info}>support@refundit.tax</span>
           </div>
           <div className={classes.right}>
-            © Refundit 2018. כל הזכויות שמורות.
+             כל הזכויות שמורות.© Refundit 2018
           </div>
         </div>
       </div>

@@ -8,7 +8,7 @@ import PaperPlaneIcon from '../../assets/images/paper_plane_icon.png';
 
 const classes = utils.createStyles('RefundStep', {
     container: {
-      marginTop: 58,
+      marginTop: 43,
       marginBottom: 100,
       fontFamily: 'Rubik Medium',
     },
@@ -19,13 +19,15 @@ const classes = utils.createStyles('RefundStep', {
     row: {
       display: 'flex',
       justifyContent: 'center',
-      overflow: 'hidden'  
+      overflow: 'hidden',
+      maxWidth: 1920,
+      margin: '0 auto',
     },
     buttonRow: {
       display: 'flex',
       alignItems: 'center',
       justifyContent: 'center',
-      marginTop: 75,
+      marginTop: 69,
       position: 'relative',
     },
     dotLine: {

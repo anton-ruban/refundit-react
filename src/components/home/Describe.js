@@ -19,7 +19,7 @@ const classes = utils.createStyles('Describe', {
     listTitle: {
       fontSize: 46,
       textAlign: 'right',
-      marginBottom: 87,
+      marginBottom: 85,
     },
     rightListTitle: {
       fontSize: 46,
@@ -27,8 +27,8 @@ const classes = utils.createStyles('Describe', {
     },
     leftList: {
       position: 'absolute',
-      right: 'calc(50% + 400px)',
-      top: 250,
+      right: 'calc(50% + 475px)',
+      top: 227,
       display: 'flex',
       flexDirection: 'column',
       width: 360,
@@ -36,8 +36,8 @@ const classes = utils.createStyles('Describe', {
     rightList: {
       position: 'absolute',
       textAlign: 'right',
-      left: '50%',
-      top: 250,
+      left: 'calc(50% + 20px)',
+      top: 227,
       display: 'flex',
       flexDirection: 'column',
       alignItems: 'center',
@@ -46,7 +46,7 @@ const classes = utils.createStyles('Describe', {
       display: 'flex',
       flexDirection: 'column',
       alignItems: 'right',
-      marginTop: 87,
+      marginTop: 80,
     },
     textList: {
       width: 360,
