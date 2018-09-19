@@ -35,6 +35,7 @@ const classes = utils.createStyles('Front', {
       color: 'white',
       marginTop: 50,
       fontSize: 31,
+      cursor: 'pointer',
       position: 'relative',
     },
     downloadBtnIcon: {
@@ -68,12 +69,32 @@ const classes = utils.createStyles('Front', {
 });
 
 class Front extends Component {
+  handleDownloadClick = () => {
+    if (
+      window.navigator.platform === 'iPhone' ||
+      window.navigator.platform === 'iPod' ||
+      window.navigator.platform === 'iPad' ||
+      window.navigator.platform === 'iPhone Simulator' ||
+      window.navigator.platform === 'iPod Simulator' ||
+      window.navigator.platform === 'iPad Simulator' ||
+      window.navigator.platform === 'Macintosh' ||
+      window.navigator.platform === 'MacIntel' ||
+      window.navigator.platform === 'MacPPC' ||
+      window.navigator.platform === 'Mac68K' ||
+      window.navigator.platform === 'Pike v7.6 release 92' ||
+      window.navigator.platform === 'Pike v7.8 release 517') {
+
+      window.open('https://itunes.apple.com/il/app/refundit/id1373203298?mt=8', '_blank');
+    } else {
+      window.open('https://play.google.com/store/apps/details?id=com.refundit', '_blank');
+    }
+  }
   render() {
     return (
       <div className={classes.container}>
         <div className={classes.center}>
           <span className={classes.title}>קחו את הזמן לשופינג בבלגיה! וקבלו החזר מע״מ באפליקציה בקלות ומכ</span>
-          <div className={classes.downloadBtn}>להורדת האפליקציה
+          <div className={classes.downloadBtn} onClick={this.handleDownloadClick}>להורדת האפליקציה
             <img className={classes.downloadBtnIcon} src={DownloadMark}/>
           </div>
           <span className={classes.firstText}>בקשו החזר מע״מ באפליקציה </span>
