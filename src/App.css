@@ -1,18 +1,18 @@
 @font-face {
-  font-family: 'Rubit Regular';
-  src: local('Rubit Regular'),
+  font-family: 'Rubik Regular';
+  src: local('Rubik Regular'),
        url('./assets/fonts/Rubik-Regular.ttf') format('truetype');
 }
 
 @font-face {
   font-family: 'Rubik Medium';
-  src: local('Rubit Medium'),
+  src: local('Rubik Medium'),
        url('./assets/fonts/Rubik-Medium.ttf') format('truetype');
 }
 
 .App {
   text-align: center;
-  font-family: 'Rubit Medium';
+  font-family: 'Rubik Medium';
 }
 
 .App-logo {
