@@ -25,6 +25,7 @@ const classes = utils.createStyles('Front', {
     title: {
       color: 'white',
       fontSize: 63,
+      fontFamily: 'Rubik Regular'
     },
     downloadBtn: {
       background: `url(${DownloadBackground}) no-repeat`,
