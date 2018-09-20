@@ -3,15 +3,15 @@ import * as utils from '../../common/utils';
 
 const classes = utils.createStyles('ListItem', {
     container: {
-      marginBottom: 33,
+      marginBottom: 18,
       display: 'flex',
       alignItems: 'center',
       justifyContent: 'space-between',
     },
     text: {
-      width: 300,
+      width: 160,
       textAlign: 'right',
-      fontSize: 29,
+      fontSize: 15,
     }
 });
 

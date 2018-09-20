@@ -11,7 +11,8 @@ import PlaneIcon from '../../assets/images/paper_plane.png';
 const classes = utils.createStyles('AboutUs', {
     container: {
       position: 'relative',
-      padding: '36px 0 110px',
+      width: 1024,
+      margin: '0 auto',
     },
     flexRow: {
       display: 'flex',
@@ -27,34 +28,34 @@ const classes = utils.createStyles('AboutUs', {
     text: {
       position: 'absolute',
       color: '#00ad96',
-      right: 'calc(50% - 594px)',
-      fontSize: 28,
-      top: 40,
+      right: 'calc(50% - 318px)',
+      fontSize: 15,
+      top: -7,
     },
     centerRow: {
       display: 'flex',
       alignItems: 'center',
       justifyContent: 'center',
-      marginTop: -13,
+      marginTop: -3,
     },
     GridItemClassName: {
-      width: 346,
+      width: 250,
       display: 'flex',
       alignItems: 'center',
-      marginLeft: 64,
-      marginRight: 105,
+      marginLeft: 0,
+      marginRight: 20,
       flexDirection: 'column',
     },
     GridItemIconClass: {
-      height: 85,
+      height: 46,
       objectFit: 'none',
       marginBottom: 5,
     },
     GridItemTextClass: {
-      fontSize: 23,
+      fontSize: 12,
     },
     planeIcon: {
-      marginLeft: 8,
+      marginLeft: 6,
     }
 });
 
