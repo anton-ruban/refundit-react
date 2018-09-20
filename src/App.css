@@ -16,10 +16,13 @@
        url('./assets/fonts/Rubik-Bold.ttf') format('truetype');
 }
 
+body {
+  display: flex;
+}
+
 .App {
   text-align: center;
   font-family: 'Rubik Medium';
-  overflow-x: hidden;
 }
 
 .App-logo {

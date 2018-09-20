@@ -8,6 +8,7 @@ const classes = utils.createStyles('Footer', {
     container: {
       maxWidth: 1920,
       margin: '0 auto',
+      minWidth: 1350,
     },
     greenSection: {
       background: '#00ad96',
@@ -18,7 +19,6 @@ const classes = utils.createStyles('Footer', {
       justifyContent: 'space-between',
       padding: '0 50px 0 119px',
       color: 'white',
-      minWidth: 1100,
     },
     text: {
       color: '#00ad96',

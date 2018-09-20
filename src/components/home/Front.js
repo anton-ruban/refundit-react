@@ -8,16 +8,15 @@ import Logo from '../../assets/images/refundit-loto.png';
 
 const classes = utils.createStyles('Front', {
     container: {
-      background: `url(${FrontBackground}) no-repeat`,
       backgroundPosition: 'center',
       position: 'relative',
+      width: '100%',
       margin: '0 auto',
       maxWidth: 1920,
-      height: 1240,
     },
     center: {
       position: 'absolute',
-      top: 540,
+      top: '43.5%',
       left: 'calc(50% - 653px)',
       display: 'flex',
       flexDirection: 'column',
@@ -69,6 +68,10 @@ const classes = utils.createStyles('Front', {
       left: 77,
       position: 'absolute',
     },
+    bgImage: {
+      width: '100%',
+      backgroundSize: 'cover',
+    }
 });
 
 class Front extends Component {
@@ -95,6 +98,7 @@ class Front extends Component {
   render() {
     return (
       <div className={classes.container}>
+        <img src={FrontBackground} className={classes.bgImage}/>
         <div className={classes.center}>
           <span className={classes.title}>קחו את הזמן לשופינג בבלגיה! וקבלו החזר מע״מ באפליקציה בקלות ומכ</span>
           <div className={classes.downloadBtn} onClick={this.handleDownloadClick}>&lt;&lt; להורדת האפליקציה

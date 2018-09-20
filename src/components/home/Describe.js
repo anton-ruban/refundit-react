@@ -10,11 +10,14 @@ import ListItem from '../controls/ListItem';
 
 const classes = utils.createStyles('Describe', {
     container: {
-      background: `url(${DescribeBg}) no-repeat`,
       position: 'relative',
       backgroundPosition: 'center',
-      height: 1157,
       color: 'white',
+      minWidth: 1350,
+    },
+    bgImage: {
+      width: '100%',
+      backgroundSize: 'cover',
     },
     listTitle: {
       fontSize: 46,
@@ -27,7 +30,7 @@ const classes = utils.createStyles('Describe', {
     },
     leftList: {
       position: 'absolute',
-      right: 'calc(50% + 475px)',
+      left: '6.5%',
       top: 227,
       display: 'flex',
       flexDirection: 'column',
@@ -51,12 +54,22 @@ const classes = utils.createStyles('Describe', {
     textList: {
       width: 360,
     },
+    '@media (max-width: 1550px)': {
+      leftList: {
+        top: 130,
+      },
+      rightList: {
+        top: 130,
+        left: '50%',
+      }
+    }
 });
 
 class Describe extends Component {
   render() {
     return (
       <div className={classes.container}>
+        <img src={DescribeBg} className={classes.bgImage}/>
         <div className={classes.leftList}>
           <span className={classes.listTitle}>Refundit בלי ־</span>
           <div className={classes.list}>
