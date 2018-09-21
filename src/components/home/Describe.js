@@ -6,6 +6,7 @@ import Clock2 from '../../assets/images/clock-2.png';
 import Clock3 from '../../assets/images/clock-3.png';
 import Clock4 from '../../assets/images/clock-4.png';
 import Clock5 from '../../assets/images/clock-5.png';
+import PhoneImage from '../../assets/images/phone.png';
 import ListItem from '../controls/ListItem';
 
 const classes = utils.createStyles('Describe', {
@@ -14,6 +15,7 @@ const classes = utils.createStyles('Describe', {
       backgroundPosition: 'center',
       color: 'white',
       maxWidth: 1920,
+      margin: '0 auto',
       minWidth: 1024,
     },
     bgImage: {
@@ -55,6 +57,34 @@ const classes = utils.createStyles('Describe', {
     textList: {
       width: '120%',
     },
+    phoneImage: {
+      position: 'absolute',
+      right: 0,
+      width: '28.4%',
+    },
+    rightBottomText: {
+      fontSize: '1.65em',
+      position: 'absolute',
+      top: '63.6%',
+      left: '47%'
+    },
+    rightBottomButton: {
+      fontSize: '2.4em',
+      position: 'absolute',
+      top: '72%',
+      left: '46%',
+      border: '4px solid white',
+      width: '29%',
+      display: 'flex',
+      alignItems: 'center',
+      justifyContent: 'center',
+      height: '9%',
+      borderRadius: 20,
+    },
+    strongText: {
+      fontSize: '1.33em',
+      fontFamily: 'Rubik Bold'
+    }
 });
 
 class Describe extends Component {
@@ -81,6 +111,9 @@ class Describe extends Component {
             </div>
           </div>
         </div>
+        <span className={classes.rightBottomText}>בקשו החזר מע״מ באפליקציה*<br/> וקבלו <span className={classes.strongText}>  50 יורו מתנה</span>לביזבוזים</span>
+        <div className={classes.rightBottomButton}>&lt;&lt; להורדת האפליקציה</div>
+        <img src={PhoneImage} className={classes.phoneImage}/>
       </div>
     );
   }

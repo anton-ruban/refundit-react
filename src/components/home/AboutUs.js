@@ -11,14 +11,15 @@ import PlaneIcon from '../../assets/images/paper_plane.png';
 const classes = utils.createStyles('AboutUs', {
     container: {
       position: 'relative',
-      padding: '36px 0 110px',
+      padding: '1.7% 0 6%',
+      margin: '0 auto',
+      maxWidth: 1920,
+      minWidth: 1024,
     },
     flexRow: {
       display: 'flex',
       alignItems: 'center',
-      maxWidth: 1920,
       margin: 'auto',
-      marginTop: 15
     },
     dotLine: {
       flex: 1,
@@ -27,22 +28,22 @@ const classes = utils.createStyles('AboutUs', {
     text: {
       position: 'absolute',
       color: '#00ad96',
-      right: 'calc(50% - 594px)',
-      fontSize: 28,
-      top: 40,
+      right: '19%',
+      fontSize: '1.4em',
+      top: '6%',
     },
     centerRow: {
       display: 'flex',
       alignItems: 'center',
       justifyContent: 'center',
-      marginTop: -13,
+      marginTop: '-1%',
     },
     GridItemClassName: {
-      width: 346,
+      width: '27%',
       display: 'flex',
       alignItems: 'center',
-      marginLeft: 64,
-      marginRight: 105,
+      height: '146px',
+      margin: '0 1%',
       flexDirection: 'column',
     },
     GridItemIconClass: {
@@ -51,7 +52,7 @@ const classes = utils.createStyles('AboutUs', {
       marginBottom: 5,
     },
     GridItemTextClass: {
-      fontSize: 23,
+      fontSize: '1.15em',
       fontFamily: 'Rubik Regular',
       color: '#424242',
     },
