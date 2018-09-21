@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import * as utils from '../../common/utils';
 import FrontBackground from '../../assets/images/front-bg.png';
-import DownloadBackground from '../../assets/images/btn_download.png';
 import DownloadMark from '../../assets/images/price_mark.png';
 import RightTopIcon from '../../assets/images/right-top-icon.png';
 import Logo from '../../assets/images/refundit-loto.png';
@@ -18,46 +17,53 @@ const classes = utils.createStyles('Front', {
     center: {
       position: 'absolute',
       top: '43.5%',
-      left: 'calc(50% - 653px)',
+      left: '50%',
+      width: '100%',
+      height: '100%',
+      transform: 'translate(-50%)',
       display: 'flex',
       flexDirection: 'column',
       alignItems: 'center',
     },
     title: {
       color: 'white',
-      width: 1257,
-      fontSize: '65px',
+      fontSize: '3.25em',
       fontFamily: 'Rubik Regular'
     },
     downloadBtn: {
-      background: `url(${DownloadBackground}) no-repeat`,
-      width: 457,
-      height: 70,
-      lineHeight: '70px',
+      border: '2px solid white',
+      width: '23%',
+      height: '5%',
+      display: 'flex',
+      alignItems: 'center',
+      justifyContent: 'center',
+      borderRadius: 20,
+      background: '#00ad96',
       color: 'white',
-      marginTop: 55,
-      fontSize: 31,
+      marginTop: '3%',
+      fontSize: '1.55em',
       cursor: 'pointer',
       position: 'relative',
     },
     downloadBtnIcon: {
-      top: -37,
-      left: -25,
+      top: '-71%',
+      left: '-7%',
       position: 'absolute',
+      width: '19%',
       color: 'white'
     },
     firstText: {
       color: 'white',
       marginTop: 10,
-      fontSize: 20,
+      fontSize: '1em',
     },
     text: {
       color: 'white',
-      fontSize: 20,
+      fontSize: '1em',
     },
     strongText: {
       fontFamily: 'Rubik Bold',
-      fontSize: 31,
+      fontSize: '1.55em',
     },
     rightTopIcon: {
       top: '1.13%',
@@ -75,8 +81,19 @@ const classes = utils.createStyles('Front', {
       width: '100%',
       backgroundSize: 'cover',
     },
-    '@media (max-width: 1200px)': {
-    }
+    bottomText: {
+      color: 'white',
+      fontSize: '1.35em',
+      marginTop: '7%',
+    },
+    bottomRightText: {
+      color: 'white',
+      fontSize: '1em',
+      position: 'absolute',
+      textAlign: 'right',
+      right: '5%',
+      bottom: '5%'
+    },
 });
 
 class Front extends Component {
@@ -111,9 +128,11 @@ class Front extends Component {
           </div>
           <span className={classes.firstText}>בקשו החזר מע״מ באפליקציה </span>
           <span className={classes.text}> וקבלו <span className={classes.strongText}>50 יורו מתנה</span> לביזבוזים</span>
+          <span className={classes.bottomText}>אז איך<br/>?עושים את זה</span>
         </div>
         <img src={RightTopIcon} className={classes.rightTopIcon}/>
         <img src={Logo} className={classes.logoIcon}/>
+        <span className={classes.bottomRightText}>,ליוצאים מאירופה דרך שדה התעופה בבריסל<br/>על קניות בבלגיה בלבד</span>
       </div>
     );
   }

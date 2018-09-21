@@ -8,6 +8,27 @@ import Footer from './Footer';
 
 const classes = utils.createStyles('Home', {
     container: {
+      fontSize: 20,
+    },
+    '@media (max-width: 1800px)': {
+      container: {
+        fontSize: 18,
+      }
+    },
+    '@media (max-width: 1600px)': {
+      container: {
+        fontSize: 16,
+      }
+    },
+    '@media (max-width: 1400px)': {
+      container: {
+        fontSize: 14,
+      }
+    },
+    '@media (max-width: 1200px)': {
+      container: {
+        fontSize: 11,
+      }
     }
 });
 
