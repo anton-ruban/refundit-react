@@ -13,6 +13,7 @@ const classes = utils.createStyles('Front', {
       width: '100%',
       margin: '0 auto',
       maxWidth: 1920,
+      minWidth: 1024,
     },
     center: {
       position: 'absolute',
@@ -59,18 +60,22 @@ const classes = utils.createStyles('Front', {
       fontSize: 31,
     },
     rightTopIcon: {
-      top: 15,
-      right: 34,
+      top: '1.13%',
+      right: '1.9%',
+      width: '12%',
       position: 'absolute',
     },
     logoIcon: {
-      top: 62,
-      left: 77,
+      top: '5%',
+      left: '4%',
+      width: '14.5%',
       position: 'absolute',
     },
     bgImage: {
       width: '100%',
       backgroundSize: 'cover',
+    },
+    '@media (max-width: 1200px)': {
     }
 });
 
