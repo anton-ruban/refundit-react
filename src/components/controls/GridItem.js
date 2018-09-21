@@ -6,14 +6,14 @@ const classes = utils.createStyles('GridItem', {
       display: 'flex',
       flexDirection: 'column',
       alignItems: 'center',
-      width: 134,
-      marginLeft: 53,
-      marginRight: 38,
+      width: 250,
+      marginLeft: 97,
+      marginRight: 71,
     },
     text: {
-      fontSize: 15,
+      fontSize: 29,
       color: '#00ad96',
-      marginTop: 8,
+      marginTop: 15,
     },
     clickable: {
       cursor: 'pointer'

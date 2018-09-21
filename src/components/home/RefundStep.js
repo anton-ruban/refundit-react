@@ -8,34 +8,33 @@ import PaperPlaneIcon from '../../assets/images/paper_plane_icon.png';
 
 const classes = utils.createStyles('RefundStep', {
     container: {
-      marginTop: 18,
-      marginBottom: 44,
+      marginTop: 43,
+      marginBottom: 100,
       fontFamily: 'Rubik Medium',
     },
     stepTitle: {
-      fontSize: 25,
+      fontSize: 48,
       color: '#00ad96',
     },
     row: {
       display: 'flex',
       justifyContent: 'center',
-      flexDirection: 'column',
       overflow: 'hidden',
-      width: 1024,
+      maxWidth: 1920,
       margin: '0 auto',
     },
     buttonRow: {
       display: 'flex',
       alignItems: 'center',
       justifyContent: 'center',
-      marginTop: 38,
+      marginTop: 69,
       position: 'relative',
     },
     dotLine: {
-      left: 330,
-      top: 44,
-      width: 690,
-      borderTop: '2px dashed #00ad96',
+      left: 256,
+      top: 80,
+      borderTop: '5px dashed #00ad96',
+      width: 'calc(100% + 50%)',
       position: 'absolute',
       zIndex: -1,
     }
@@ -45,8 +44,8 @@ class RefundStep extends Component {
   render() {
     return (
       <div className={classes.container}>
+        <span className={classes.stepTitle}>קבלו החזר בשלושה צעדים פשוטים</span>
         <div className={classes.row}>
-          <span className={classes.stepTitle}>קבלו החזר בשלושה צעדים פשוטים</span>
           <div className={classes.buttonRow}>
             <div className={classes.dotLine}></div>
             <GridItem icon={ThumbsUpIcon} text='**קבלו אישור  והכסף בדרך אליכם'/>
