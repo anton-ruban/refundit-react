@@ -9,9 +9,8 @@ const classes = utils.createStyles('ListItem', {
       justifyContent: 'space-between',
     },
     text: {
-      width: 300,
       textAlign: 'right',
-      fontSize: 29,
+      fontSize: '1.45em',
     }
 });
 

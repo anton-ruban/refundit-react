@@ -8,31 +8,33 @@ import PaperPlaneIcon from '../../assets/images/paper_plane_icon.png';
 
 const classes = utils.createStyles('RefundStep', {
     container: {
-      marginTop: 43,
-      marginBottom: 100,
+      marginTop: '2%',
+      marginBottom: '4.4%',
       fontFamily: 'Rubik Medium',
+      maxWidth: 1920,
+      minWidth: 1024,
     },
     stepTitle: {
-      fontSize: 48,
+      fontSize: '2.4em',
       color: '#00ad96',
     },
     row: {
       display: 'flex',
       justifyContent: 'center',
       overflow: 'hidden',
-      maxWidth: 1920,
       margin: '0 auto',
     },
     buttonRow: {
       display: 'flex',
       alignItems: 'center',
       justifyContent: 'center',
-      marginTop: 69,
+      marginTop: '3.6%',
       position: 'relative',
+      width: '100%',
     },
     dotLine: {
-      left: 256,
-      top: 80,
+      left: '32.5%',
+      top: '35%',
       borderTop: '5px dashed #00ad96',
       width: 'calc(100% + 50%)',
       position: 'absolute',
