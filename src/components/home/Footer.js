@@ -63,7 +63,7 @@ class Footer extends Component {
             <span className={classes.info}>support@refundit.tax</span>
           </div>
           <div className={classes.right}>
-             כל הזכויות שמורות.© Refundit 2018
+             כל הזכויות שמורות .Refundit 2018 ©
           </div>
         </div>
       </div>

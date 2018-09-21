@@ -48,9 +48,9 @@ class RefundStep extends Component {
         <div className={classes.row}>
           <div className={classes.buttonRow}>
             <div className={classes.dotLine}></div>
-            <GridItem icon={ThumbsUpIcon} text='**קבלו אישור  והכסף בדרך אליכם'/>
-            <GridItem icon={PaperPlaneIcon} text='צרפו את הדרכון ואת כרטיס העליה למטוס'/>
-            <GridItem icon={CameraIcon} text='צלמו את החשבונית בחנות'/>
+            <GridItem icon={ThumbsUpIcon} textHtml='קבלו אישור**<br/>והכסף בדרך אליכם'/>
+            <GridItem icon={PaperPlaneIcon} textHtml='צרפו את הדרכון ואת<br/>כרטיס העליה למטוס'/>
+            <GridItem icon={CameraIcon} textHtml='צלמו את<br/>החשבונית בחנות'/>
           </div>
         </div>
       </div>

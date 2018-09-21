@@ -25,11 +25,11 @@ class GridItem extends Component {
     this.props.onClickItem && this.props.onClickItem();
   }
   render() {
-    const {icon, text, iconClassName, textClassName, className, onClickItem} = this.props;
+    const {icon, textHtml, iconClassName, textClassName, className, onClickItem} = this.props;
     return (
       <div className={utils.classes(classes.container, className, onClickItem ? classes.clickable : '')} onClick={this.handleItemClick}>
         <img src={icon} className={iconClassName}/>
-        <span className={textClassName ? textClassName : classes.text}>{text}</span>
+        <span className={textClassName ? textClassName : classes.text} dangerouslySetInnerHTML={{__html: textHtml}}></span>
       </div>
     );
   }

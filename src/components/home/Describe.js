@@ -73,19 +73,19 @@ class Describe extends Component {
         <div className={classes.leftList}>
           <span className={classes.listTitle}>Refundit בלי ־</span>
           <div className={classes.list}>
-            <ListItem icon={Clock5} text='ממלאים טפסים מתישים'/>
-            <ListItem icon={Clock4} text='עומדים בתור בלתי נגמר במכס'/>
-            <ListItem icon={Clock3} text='מקבלים החזר רק במספר מוגבל של חנויות '/>
-            <ListItem icon={Clock2} text='משלמים עמלה מנופחת של  60% - 30%'/>
+            <ListItem icon={Clock5} textHtml='ממלאים טפסים מתישים'/>
+            <ListItem icon={Clock4} textHtml='עומדים בתור<br/>בלתי נגמר במכס'/>
+            <ListItem icon={Clock3} textHtml='מקבלים החזר רק במספר<br/>מוגבל של חנויות'/>
+            <ListItem icon={Clock2} textHtml='משלמים עמלה מנופחת<br/>של  60% - 30%'/>
           </div>
         </div>
         <div className={classes.rightList}>
           <div className={classes.textList}>
             <span className={classes.rightListTitle}>Refundit עם ־</span>
             <div className={classes.rightlistView}>
-              <ListItem icon={Clock5} text='משלימים את התהליך במהירות וללא טפסים'/>
-              <ListItem icon={Clock1} text='מקבלים החזר על קניות בכל החנויות'/>
-              <ListItem icon={Clock4} text='משלמים רק 9% עמלה'/>
+              <ListItem icon={Clock5} textHtml='משלימים את התהליך<br/>במהירות וללא טפסים'/>
+              <ListItem icon={Clock1} textHtml='מקבלים החזר על קניות<br/>בכל החנויות'/>
+              <ListItem icon={Clock4} textHtml='משלמים רק 9% עמלה'/>
             </div>
           </div>
         </div>

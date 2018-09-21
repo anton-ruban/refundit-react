@@ -100,7 +100,7 @@ class Front extends Component {
       <div className={classes.container}>
         <img src={FrontBackground} className={classes.bgImage}/>
         <div className={classes.center}>
-          <span className={classes.title}>קחו את הזמן לשופינג בבלגיה! וקבלו החזר מע״מ באפליקציה בקלות ומכ</span>
+          <span className={classes.title}>!קחו את הזמן לשופינג בבלגיה<br/>וקבלו החזר מע״מ באפליקציה בקלות ומכל חנות</span>
           <div className={classes.downloadBtn} onClick={this.handleDownloadClick}>&lt;&lt; להורדת האפליקציה
             <img className={classes.downloadBtnIcon} src={DownloadMark}/>
           </div>

@@ -52,6 +52,8 @@ const classes = utils.createStyles('AboutUs', {
     },
     GridItemTextClass: {
       fontSize: 23,
+      fontFamily: 'Rubik Regular',
+      color: '#424242',
     },
     planeIcon: {
       marginLeft: 8,
@@ -78,20 +80,20 @@ class AboutUs extends Component {
         </div>
         <div className={classes.centerRow}>
           <GridItem
-            icon={Globes} text='בלי תור ודרך הנייד: מיזם חדש  מפשט את החזר המע"מ לתיירים'
+            icon={Globes} textHtml='״בלי תור ודרך הנייד: מיזם חדש<br/> מפשט את החזר המע"מ לתיירים״'
             className={classes.GridItemClassName}
             iconClassName={classes.GridItemIconClass}
             onClickItem={() => this.handleItemClick('globes')}
             textClassName={classes.GridItemTextClass}/>
           <GridItem
-            icon={TheMarker} text='טסים לבלגיה החודש? אפליקציית החזרי מס מציעה 50 יורו לבזבוזים'
+            icon={TheMarker} textHtml='?״טסים לבלגיה החודש<br/>אפליקציית החזרי מס מציעה 50 יורו לבזבוזים״'
             className={classes.GridItemClassName}
             iconClassName={classes.GridItemIconClass}
             onClickItem={() => this.handleItemClick('themarker')}
             textClassName={classes.GridItemTextClass}/>
           <GridItem
             icon={GeekTime}
-            text='הסטארטאפ החדש של אורי לוין מביא בשורה לתחום החזרי המע׳׳מ בשדה'
+            textHtml='״הסטארטאפ החדש של אורי לוין<br/>מביא בשורה לתחום החזרי המע׳׳מ בשדה התעופה״'
             className={classes.GridItemClassName}
             iconClassName={classes.GridItemIconClass}
             onClickItem={() => this.handleItemClick('geektime')}

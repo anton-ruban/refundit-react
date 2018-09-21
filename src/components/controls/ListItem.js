@@ -17,10 +17,10 @@ const classes = utils.createStyles('ListItem', {
 
 class ListItem extends Component {
   render() {
-    const {icon, text} = this.props;
+    const {icon, textHtml} = this.props;
     return (
       <div className={classes.container}>
-        <span className={classes.text}>{text}</span>
+        <span className={classes.text} dangerouslySetInnerHTML={{__html: textHtml}}></span>
         <img src={icon}/>
       </div>
     );
