@@ -11,6 +11,10 @@ const classes = utils.createStyles('ListItem', {
     text: {
       textAlign: 'right',
       fontSize: '1.45em',
+      width: '83%',
+    },
+    icon: {
+      width: '10%',
     }
 });
 
@@ -20,7 +24,7 @@ class ListItem extends Component {
     return (
       <div className={classes.container}>
         <span className={classes.text} dangerouslySetInnerHTML={{__html: textHtml}}></span>
-        <img src={icon}/>
+        <img className={classes.icon} src={icon}/>
       </div>
     );
   }

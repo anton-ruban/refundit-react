@@ -9,7 +9,7 @@ import PaperPlaneIcon from '../../assets/images/paper_plane_icon.png';
 const classes = utils.createStyles('RefundStep', {
     container: {
       marginTop: '2%',
-      marginBottom: '4.4%',
+      marginBottom: '4.2%',
       fontFamily: 'Rubik Medium',
       maxWidth: 1920,
       minWidth: 1024,

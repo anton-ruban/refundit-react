@@ -13,34 +13,35 @@ const classes = utils.createStyles('Describe', {
       position: 'relative',
       backgroundPosition: 'center',
       color: 'white',
-      minWidth: 1350,
+      maxWidth: 1920,
+      minWidth: 1024,
     },
     bgImage: {
       width: '100%',
       backgroundSize: 'cover',
     },
     listTitle: {
-      fontSize: 46,
+      fontSize: '2.3em',
       textAlign: 'right',
-      marginBottom: 85,
+      marginBottom: '22%',
     },
     rightListTitle: {
-      fontSize: 46,
+      fontSize: '2.3em',
       textAlign: 'right',
     },
     leftList: {
       position: 'absolute',
-      left: '6.5%',
-      top: 227,
+      left: '4%',
+      top: '20%',
       display: 'flex',
       flexDirection: 'column',
-      width: 360,
+      width: '21%',
     },
     rightList: {
       position: 'absolute',
       textAlign: 'right',
       left: 'calc(50% + 20px)',
-      top: 227,
+      top: '20%',
       display: 'flex',
       flexDirection: 'column',
       alignItems: 'center',
@@ -49,20 +50,11 @@ const classes = utils.createStyles('Describe', {
       display: 'flex',
       flexDirection: 'column',
       alignItems: 'right',
-      marginTop: 80,
+      marginTop: '21%',
     },
     textList: {
-      width: 360,
+      width: '120%',
     },
-    '@media (max-width: 1550px)': {
-      leftList: {
-        top: 130,
-      },
-      rightList: {
-        top: 130,
-        left: '50%',
-      }
-    }
 });
 
 class Describe extends Component {
