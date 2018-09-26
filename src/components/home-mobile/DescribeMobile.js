@@ -62,17 +62,17 @@ class DescribeMobile extends Component {
         <div className={classes.body}>
           <span className={classes.title}>Refundit עם</span>
           <GridItem
-            icon={Clock5} textHtml='משלימים את<br/><b>במהירות<b/> התהליך'
+            icon={Clock5} textHtml='משלימים את<br/>התהליך במהירות'
             className={classes.gridItemClassName}
             iconClassName={classes.gridItemIconClass}
             textClassName={classes.gridItemTextClass}/>
           <GridItem
-            icon={Clock1} textHtml='מקבלים החזר על<br/><b>בכל החנויות</b> קניות'
+            icon={Clock1} textHtml='מקבלים החזר על<br/>קניות בכל החנויות'
             className={classes.gridItemClassName}
             iconClassName={classes.gridItemIconClass}
             textClassName={classes.gridItemTextClass}/>
           <GridItem
-            icon={Clock4} textHtml='עמלה <b>9%</b> משלמים רק'
+            icon={Clock4} textHtml='משלמים רק 9% עמלה'
             className={classes.gridItemClassName}
             iconClassName={classes.gridItemIconClass}
             textClassName={classes.gridItemTextClass}/>

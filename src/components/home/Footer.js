@@ -9,6 +9,7 @@ const classes = utils.createStyles('Footer', {
       maxWidth: 1920,
       margin: '0 auto',
       minWidth: 1024,
+      textAlign: 'right',
     },
     greenSection: {
       background: '#00ad96',
@@ -20,11 +21,7 @@ const classes = utils.createStyles('Footer', {
       color: 'white',
     },
     firstText: {
-      marginLeft: '13%',
-      color: '#00ad96',
-      fontSize: '0.9em',
-    },
-    text: {
+      marginRight: '3%',
       color: '#00ad96',
       fontSize: '0.9em',
     },
@@ -43,6 +40,9 @@ const classes = utils.createStyles('Footer', {
     info: {
       fontSize: '1.35em',
       marginRight: 51,
+    },
+    anchor: {
+      fontSize: 0,
     },
     contactIcon: {
       cursor: 'pointer',
@@ -74,20 +74,19 @@ class Footer extends Component {
   render() {
     return (
       <div className={classes.container}>
-        <span className={classes.text}>במקרים מסויימים תיתכן בקשה להגעה למכס, תקבלו הודעה על כך 4 שעות לפני הטיסה**</span>
-        <span className={classes.firstText}>מוגבל למבקשי החזר באפליקציה בספטמבר-אוקטובר 2018 קוד קופון בלגיה2018 למימוש ההטבה עם שובכם לישראל*</span>
+        <span className={classes.firstText}>מוגבל למבקשי החזר באפליקציה בספטמבר-אוקטובר 2018 קוד קופון בלגיה2018 למימוש ההטבה עם שובכם לישראל **במקרים מסויימים תיתכן בקשה להגעה למכס, תקבלו הודעה על כך 4 שעות לפני הטיסה*</span>
         <div className={classes.greenSection}>
           <div className={classes.flex}>
             <div className={classes.links}>
-              <a href='https://www.facebook.com/RefunditIsrael' target='_blank'><img src={FacebookIcon} className={classes.contactIcon}/></a>
-              <a href='https://www.linkedin.com/company/refundit-ltd' target='_blank'><img src={LinkedinIcon} className={classes.contactIcon}/></a>
-              <img src={PhoneIcon} className={classes.contactIcon}/>
+              <a className={classes.anchor} href='https://www.facebook.com/RefunditIsrael' target='_blank'><img src={FacebookIcon} className={classes.contactIcon}/></a>
+              <a className={classes.anchor} href='https://www.linkedin.com/company/refundit-ltd' target='_blank'><img src={LinkedinIcon} className={classes.contactIcon}/></a>
+              <a className={classes.anchor}><img src={PhoneIcon} className={classes.contactIcon}/></a>
             </div>
             <span className={classes.info}>054-7171971</span>
             <span className={classes.info}>support@refundit.tax</span>
           </div>
           <div className={classes.right}>
-             כל הזכויות שמורות .Refundit 2018 ©
+             .כל הזכויות שמורות .Refundit 2018 ©
           </div>
         </div>
       </div>

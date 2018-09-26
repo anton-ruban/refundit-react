@@ -38,6 +38,7 @@ const classes = utils.createStyles('FooterMobile', {
     '@media (max-width: 400px)': {
       container: {
         height: 40,
+        padding: '0 1%',
       }
     },
 });

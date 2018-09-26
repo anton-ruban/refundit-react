@@ -3,6 +3,7 @@ import * as utils from '../../common/utils';
 import DownloadMark from '../../assets/images/price_mark.png';
 import FrontBackground from '../../assets/images/front-bg-mobile.png';
 import Logo from '../../assets/images/refundit-loto.png';
+import DownArrow from '../../assets/images/down_arrow.png';
 
 const classes = utils.createStyles('FrontMobile', {
     container: {
@@ -72,6 +73,13 @@ const classes = utils.createStyles('FrontMobile', {
       width: '100%',
       backgroundSize: 'cover',
     },
+    arrowButton: {
+      position: 'absolute',
+      left: '50%',
+      transform: 'translate(-50%)',
+      bottom: '15%',
+      width: '10%'
+    },
 });
 
 class FrontMobile extends Component {
@@ -104,6 +112,7 @@ class FrontMobile extends Component {
           <span className={classes.title}>!קחו את הזמן לשופינג בבלגיה<br/>וקבלו החזר מע״מ<br/>באפליקציה בקלות ומכל חנות</span>
         </div>
         <span className={classes.bottomText}>אז איך<br/>?עושים את זה</span>
+        <a><img className={classes.arrowButton} src={DownArrow}/></a>
         <div className={classes.downloadBtn} onClick={this.handleDownloadClick}>
           <span className={classes.downloadBoldText}>להורדת האפליקציה</span>
           <span className={classes.downloadText}>*בקשו החזר מע״מ באפליקציה וקבלו 50 יורו מתנה לביזבוזים</span>

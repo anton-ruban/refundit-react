@@ -10,6 +10,7 @@ import ContactInfoMobile from './ContactInfoMobile';
 const classes = utils.createStyles('HomeMobile', {
     container: {
       fontSize: 20,
+      overflow: 'hidden',
     },
     '@media (max-width: 730px)': {
       container: {

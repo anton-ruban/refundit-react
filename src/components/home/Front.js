@@ -4,6 +4,7 @@ import FrontBackground from '../../assets/images/front-bg.png';
 import DownloadMark from '../../assets/images/price_mark.png';
 import RightTopIcon from '../../assets/images/right-top-icon.png';
 import Logo from '../../assets/images/refundit-loto.png';
+import DownArrow from '../../assets/images/down_arrow.png';
 
 const classes = utils.createStyles('Front', {
     container: {
@@ -84,7 +85,14 @@ const classes = utils.createStyles('Front', {
     bottomText: {
       color: 'white',
       fontSize: '1.35em',
-      marginTop: '7%',
+      marginTop: '6.5%',
+    },
+    arrowButton: {
+      position: 'absolute',
+      left: '50%',
+      transform: 'translate(-50%)',
+      bottom: '48%',
+      width: '4%'
     },
     bottomRightText: {
       color: 'white',
@@ -126,9 +134,10 @@ class Front extends Component {
           <div className={classes.downloadBtn} onClick={this.handleDownloadClick}>&lt;&lt; להורדת האפליקציה
             <img className={classes.downloadBtnIcon} src={DownloadMark}/>
           </div>
-          <span className={classes.firstText}>בקשו החזר מע״מ באפליקציה </span>
+          <span className={classes.firstText}>בקשו החזר מע״מ באפליקציה*</span>
           <span className={classes.text}> וקבלו <span className={classes.strongText}>50 יורו מתנה</span> לביזבוזים</span>
           <span className={classes.bottomText}>אז איך<br/>?עושים את זה</span>
+          <a><img className={classes.arrowButton} src={DownArrow}/></a>
         </div>
         <img src={RightTopIcon} className={classes.rightTopIcon}/>
         <img src={Logo} className={classes.logoIcon}/>
